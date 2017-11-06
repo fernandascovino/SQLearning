@@ -84,6 +84,12 @@ SELECT * FROM table WHERE colunm LIKE '![x-z]%'
 /* Itens na coluna que não ncomeçam com X, Y ou Z */
 ```
 
+```sql
+SELECT * FROM table WHERE colunm SIMILAR TO '(A|B|C)%'
+
+/* Todas que começam com A, B ou C */
+```
+
 #### Tabelas múltiplas
 
 > A foreign key is a column that contains the primary key of another table in the database. 
@@ -119,4 +125,21 @@ JOIN artists ON albums.artist_id = artists.id;
 
 /* Lista os albums cruzando infos de artista e ano da tabela artistas */
 
+```
+
+Diferença de duas tabelas
+
+```sql
+
+CREATE TABLE artits_on_grammy(
+  id INTEGER PRIMARY KEY,
+  name TEXT
+)
+
+/* Quais artistas não foram agraciados com um grammy? */
+
+SELECT artists.*
+FROM artists
+    LEFT JOIN artists_on_grammy ON (artists.id = artistis_on_grammy.id)
+WHERE artistis_on_grammy.id IS NULL
 ```
