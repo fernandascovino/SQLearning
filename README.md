@@ -1,13 +1,11 @@
-# SQLearning
+## SQLearning
 
 Estudo de SQL (*Structured Query Language*) é a linguagem para consulta 
 e gerenciamento de banco de dados relacionais.
 
-### Organização
+### Organização do repositório
 
-    ├── README.md                  <- descrição do projeto (você está 
-aqui!)
+    ├── README.md                  <- Descrição do projeto (você está aqui!)
     ├── Sintax
-    │   ├── basic                  <- Comandos básicos para 
-gerenciamento e consulta de tabelas
-    ├── Exercises                  <- exercícios resolvidos
+    │   └── basic                  <- Comandos básicos para gerenciamento e consulta de tabelas
+    └── Exercises                  <- Exercícios resolvidos
